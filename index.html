@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo"> ING. ESPE<Span>RANCE</Span></a>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#accueil">Home</a></li>
+        <li><a href="#apropos">About</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <div class="text-container">
+      <h3>Hello It's Me </h3>
+      <h1>Sophonie Christella ESPERANCE</h1>
+      <h3> And I'm a <span class="text"> </span></h3>
+      <p>Ingénieure finissante en sciences informatique et diplômée en Gestion des PMEs , passionnée par l’exploration 
+et l’exploitation des données pour soutenir la prise de décision. Grâce à ma formation en analyse de données 
+avec Python et à ma rigueur méthodologique, je transforme les données brutes en informations stratégiques. 
+Curieuse, et organisée, je souhaite contribuer à des projets innovants où la donnée devient un levier de 
+performance, de transparence et d’impact social, J'ai aussi des compétences en résolution de problèmes de toutes sortes. Mon ambition est de mettre mes compétences à profit pour mener à bien des projets significatifs et impactants. J'ai la capacité d'apprendre et de m'adapter rapidement à n'importe quel environnement de travail. Toutes ces qualités ajoutées à mes compétences techniques me rendent apte au travail en équipe.</p>
+    
+
+      <div class="home-sci">
+        <a href="https://www.facebook.com/sophie.esperance.7"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/sophie_esperance?igsh=MTBiOGJ4cmd6czNweQ=="><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/sophonie-christella-esperance-59624b246"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/Sophiesperance"><i class='bx bxl-github' ></i></a>
+      </div>
+      <a href="CV_Sophonie.pdf" download class="btn">Download CV</a>
+    </div>
+    <img src="images/so.jpg" alt="Ingénieur Data">
+  </section>
+  
+
+  <section id="apropos" class="about-section">
+    <div class="about-container">
+      <!-- Partie gauche : image -->
+      <div class="about-image">
+        <img src="images/so.jpg" alt="Ma photo">
+      </div>
+  
+      <!-- Partie droite : texte + onglets -->
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Je suis passionne par le Big Data et l'intelligence Artificiel. Actuellement Frealencer a Exellence Star Business et Responsable Mediatique dans une conference.  
+        </p>
+  
+        <!-- Onglets -->
+        <div class="tabs">
+          <button class="tab-link active" onclick="openTab(event, 'skills')">Certificate</button>
+          <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+          <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+        </div>
+  
+        <!-- Contenu des onglets -->
+        <div id="skills" class="tab-content active-tab">
+          <ul>
+            <li><strong>Cyber Security :</strong> Cisco Networking</li>
+            <li><strong>Réseaux : </strong> Cisco Networking</li>
+            <li><strong>Google Workspace :</strong> Agence Universitaire de la Francophonie AUF-CEF</li>
+            <li><strong>Leadership :</strong> Aspire INSTITUTE</li>
+          </ul>
+        </div>
+  
+        <div id="education" class="tab-content">
+          <ul>
+            <li><strong>2025:</strong> Master en Sciences Informatiques – Ecole Superieure d'Infotronique d'Haiti - ESIH</li>
+            <li><strong>2021-2024:</strong> Licence en Sciences Informatique – Ecole Superieure d'Infotronique d'Haiti - ESIH </li>
+            <li><strong>2021-2023:</strong> Diplome En Gestion des Petites et Moyennes Entreprises – Ecole Superieure d'Infotronique d'Haiti - ESIH</li>
+          </ul>
+        </div>
+
+         <div id="experience" class="tab-content">
+          <ul>
+            <li><strong>2024 - Aujourd hui:</strong> Responsable Mediatique Chez FreeMethodisteChurch</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="services-section" id="services">
+    <h2 class="section-title">Skills</h2>
+    <div class="services-container">
+  
+      <div class="service-card" >
+
+
+  <div class="grid">
+    <!-- Réseaux -->
+    <div class="card">
+      <img src="https://img.freepik.com/free-photo/server-room-with-network-cable-connections_53876-96807.jpg" alt="Réseaux informatiques">
+      <div class="card-content">
+        <h3>Administration des réseaux</h3>
+        <p>Configuration de réseaux, sécurité, notions de cybersécurité, services essentiels.</p>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="card">
+      <img src="images\python-logo-png.png" alt="Python">
+      <div class="card-content">
+        <h3>Analyse données avec Python</h3>
+        <p>Manipulation de données avec NumPy, Pandas ; création de rapports.</p>
+      </div>
+    </div>
+
+    <!-- Linux -->
+    <div class="card">
+      <img src="images/linux_logo_icon.png" alt="Linux">
+      <div class="card-content">
+        <h3>Administration Linux</h3>
+        <p>Utilisation de Debian pour la gestion de services et l'administration système.</p>
+      </div>
+    </div>
+
+    <!-- Windows Server -->
+    <div class="card">
+      <img src="images\windowsServer.png" alt="Windows Server">
+      <div class="card-content">
+        <h3>Windows Server</h3>
+        <p>Gestion des services DHCP, DNS, Active Directory sur Windows Server.</p>
+      </div>
+    </div>
+
+    <!-- Développement Web -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Développement Web">
+      <div class="card-content">
+        <h3>Développement Web</h3>
+        <p>Création de sites web front-end et back-end avec les technologies de base.</p>
+      </div>
+    </div>
+
+    <!-- Power BI -->
+    <div class="card">
+      <img src="images\icone powerBI-excel.png" alt="Power BI">
+      <div class="card-content">
+        <h3>Analyse avec Excel & Power BI</h3>
+        <p>Création de tableaux de bord, rapports visuels et analyse de données.</p>
+      </div>
+    </div>
+
+    <!-- Google Workspace -->
+    <div class="card">
+      <img src="images/icone_Drive.png" alt="Google Workspace">
+      <div class="card-content">
+        <h3>Google Workspace</h3>
+        <p>Maîtrise des outils Google : Docs, Sheets, Drive, Forms pour la collaboration.</p>
+      </div>
+    </div>
+
+    <!-- Diffusion numérique -->
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Réseaux sociaux">
+      <div class="card-content">
+        <h3>Communication & diffusion</h3>
+        <p>Gestion de contenu numérique et diffusion en direct sur Facebook, Instagram.</p>
+      </div>
+    </div>
+
+    <!-- Gestion de projet -->
+    <div class="card">
+      <img src="images/icone_gestionProjets.png" alt="Gestion de projet">
+      <div class="card-content">
+        <h3>Gestion de projet</h3>
+        <p>Planification, coordination d’équipes et suivi d'activités techniques.</p>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+  
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:sophieesperance07@gmail.com">sophieesperance07@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+50935678899">+509 4077 - 2383</a></p>
+
+        <div class="home-sci">
+        <a href="https://www.facebook.com/sophie.esperance.7"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/sophie_esperance?igsh=MTBiOGJ4cmd6czNweQ=="><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/sophonie-christella-esperance-59624b246"><i class='bx bxl-linkedin' ></i></a>
+        <a href= ><i class='bx bxl-github' ></i></a>
+        </div>
+
+        <a href="CV_Sophonie.pdf" download class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Mon Portfolio - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
